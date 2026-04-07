@@ -1,2 +1,4 @@
+# we need mongodb version 7 so using offcial mongo 7.0 version
+#docker-entrypoint-initdb.d is the dir to initialise the databse for the first time
 FROM mongo:7.0
 COPY *.js /docker-entrypoint-initdb.d
